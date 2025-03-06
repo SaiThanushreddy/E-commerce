@@ -1,0 +1,47 @@
+{
+  "cli": {
+    "version": ">= 15.0.11",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    },
+    "build-and-maestro": {
+      "withoutCredentials": true,
+      "android": {
+        "buildType": "apk",
+        "image": "latest"
+      },
+      "env": {
+        "EXPO_PUBLIC_FIREBASE_API_KEY": "AIzaSyDFicqDYMJ6HORo2RZ7eExy6WNfPAwXgqk",
+        "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "e-commerce-app-dc212.firebaseapp.com",
+        "EXPO_PUBLIC_FIREBASE_PROJECT_ID": "e-commerce-app-dc212",
+        "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET": "e-commerce-app-dc212.firebasestorage.app",
+        "EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": "135453737237",
+        "EXPO_PUBLIC_FIREBASE_APP_ID": "1:135453737237:web:61244f9c6ddf760d88291c",
+        "EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID": "G-G96TN6HP31",
+        "FIREBASE_PROJECT_ID": "e-commerce-app-dc212",
+        "FIREBASE_PRIVATE_KEY_ID": "d91c66770a158cf9e4e8cf6554e265f1f983d0ea",
+        "FIREBASE_PRIVATE_KEY": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC31wppKXe3EKLo\nHQ6vHqHNM4MbzxtecKFGXx81HGjyV04iD2IPdyMj3hwv10iscUyLBsnBC4dGoE72\n/BxDQSRbztdm03E8iwTlCOVh4yRnR8NCaQhJ1aYAnNTZ+mUfkEu/0CS0pHC6cgoP\ncmAWvwIYwDAevOjDJU1OYaXcNihU1Fsy+/qlGdS0sbUx4mZsiDSyAKq2DZYPWiG6\njQRmxPfmXGnqamEUbN6IOOELVrGcv1O7oGqNxe/+cYF42wTnUeZytqdSzN08cgmj\nm0e7xhr2LvFprSZLCX+ofs+qYBPys1Uku/OGKYG8GjMj7YhKVhbnyUEs4wJTofGU\n4gaszJHJAgMBAAECggEAD+MJ98eJHG1YHqXwMGr9wY1rjZoqu9EQ5tNuj3jqitLH\nokLhDwQVKdLWbb31fk12N2d5RPD5mj1dRZPI33kAKtznmW+5T+mVnTNVG031ReWa\nNqF8AWFwrInhDQtJ9N3T5foXSfMR+NLFEsuoCR8tj7UAE4/wr3iIQzdGDY8ykg34\nZnvBlhv3KC4MGMksMXCODZ9Bz8iE27u1q9sYKW64WaM6mxnSt7Grpux8HWGGQbtg\nyNYqgZJdKm5sFNg+Be4Vcw5LShrO5z9vT0hFoSEN5KsaPI4Ee42xWULUGEyQycrY\nWrQpBGPDmUfaiukaSRhVmqQzvTkIqtJg70WFh6PqGQKBgQDfmrs3H9+vBaaez44L\nPdyNb+RjFo4N7lmdvrQnDwPTnkfKs1t26+wgxKrKINqWoeb4wSgMiyiG9v5G4Qo6\ntwSMJCidSl8ftgLgJC3nghgmMpTBC8C25dUbWiFcN2Uno0LzVPb9vJ15VNjpB6iM\nz/BKzwKQLzeNzIF8F04cLnN3dQKBgQDSeXxzEUJ/W4BUBjI61dxKbbGJ9GrSrYIu\nWJyWWi2XKw62TFn6+PSrBgSbUWFW+TwAeY6dFBdakuS610OhegtALIePSs2RULgj\nQAczjEE46xBIYm6o3bol7gg6yHMK8N72I4zVCVBd99uGmdsca9ZXLwBlk0CmAfXe\nCQy6AeM6hQKBgGmPZ5CXiIbc2RMiEwG1m5hd2Wj57egfvMjejbfeu8S8dVH5KFXU\n/K1fiu1PY0I3fo2yylBZpbFJizM07BpZ6liqfU38HTogN+1OxykC3pmxyU31WW4+\nxENcYmFheWykA2hSlSOmVoVADAK+7dBEHkGCxsgAsm5LvFkzu1lMiJA9AoGAIHPc\n7X0WzL5WDh6adhntiohZXJUUN4HLVcwR8NjcuLdJ4G/rW9gxGYGnCi/FG3z4dHZJ\nuAyWAUAvBmQUqHxB6dYz3LNC+QoCKmU/9wHEOLt92jtbJqxxfFG0cSPhISm8pyUa\nHOr/uk1yStHESCCUfwLfQ8otqKsatu6cSL3rxGUCgYA2+g/2ypPfzC0QCZ6gHPOw\naLZTivDKSLAv6Y/QVERsSO/WcQxJ3wKDz49jzU7o2QH/CSZ4dwUcyxTGZt+RvhsV\naYdtaf9QJCm3HtpRG4BVauwfaEkEgzqq4xVR61Gns1X9ymCuo36HLaYowI81l4GG\ngNIOAXqFVkaeRZ3AfvS9pQ==\n-----END PRIVATE KEY-----\n",
+        "FIREBASE_CLIENT_EMAIL": "firebase-adminsdk-fbsvc@e-commerce-app-dc212.iam.gserviceaccount.com",
+        "FIREBASE_CLIENT_ID": "117397891271561677250",
+        "FIREBASE_AUTH_URI": "https://accounts.google.com/o/oauth2/auth",
+        "FIREBASE_TOKEN_URI": "https://oauth2.googleapis.com/token",
+        "FIREBASE_AUTH_PROVIDER_CERT_URL": "https://www.googleapis.com/oauth2/v1/certs",
+        "FIREBASE_CLIENT_CERT_URL": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40e-commerce-app-dc212.iam.gserviceaccount.com",
+        "FIREBASE_UNIVERSE_DOMAIN": "googleapis.com"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

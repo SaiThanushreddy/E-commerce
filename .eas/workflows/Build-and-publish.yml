@@ -1,0 +1,25 @@
+name: Production Build and Play Store Submit
+
+on:
+  push:
+    branches: ['*']  # Triggers on push to any branch
+
+jobs:
+  build:
+    name: Build Production App
+    type: build
+    params:
+      platform: all  # Builds for both iOS and Android
+      profile: production  # Uses the production build profile
+      cache: true  # Enables build caching for faster builds
+    environment:
+      node: 18.18.0  # Specifies Node.js version
+  
+  submit-android:
+    name: Submit to Play Store
+    needs: [build]  # This job depends on the build job completing successfully
+    type: submit
+    params:
+      platform: android  # Explicitly specify Android platform
+      build_id: ${{ needs.build.outputs.build_id }}  # Uses the build ID from the previous job
+      track: production  # Submits to the Production track on Google Play

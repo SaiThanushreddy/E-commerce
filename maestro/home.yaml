@@ -1,0 +1,108 @@
+appId: com.thanushreddy.ecommereceapp
+---
+- launchApp
+- assertVisible: "Shop X"
+- tapOn: "Continue as Guest"
+# Test Electronics category from main screen
+- assertVisible: "Electronics"
+- tapOn: "Electronics"
+
+
+- tapOn: "$64.00"
+
+# Tap on the back button to return to category list
+- tapOn:
+    id: "back-button"
+
+
+
+# Navigate to Explore tab
+- tapOn: "Explore"
+- assertVisible: "Featured"
+
+# Test category selection in Explore screen
+- assertVisible: "Categories"
+- tapOn: "Electronics"
+
+# Go back from category to Explore screen
+
+- tapOn:
+    id: "back-button"
+
+# Verify we're back on the Explore screen
+- assertVisible: "Explore"
+- assertVisible: "Featured"
+- tapOn: "Cart"
+- tapOn: "Continue Shopping"
+
+- tapOn: "profile"
+- tapOn: "Sign in with Google"
+- tapOn: "Sai thanush reddy"
+- tapOn: "Home"
+- assertVisible: "Electronics"
+- tapOn: "Electronics"
+- tapOn: "$64.00"
+- tapOn: "Add to Cart"
+- tapOn: "OK"
+- tapOn:
+    id: "back-button"
+- tapOn: "Cart"
+
+# Verify item is in cart
+- assertVisible:
+    text: "$64.00"
+- assertVisible:
+    text: "1"  # Initial quantity
+
+# Test increasing quantity
+- tapOn:
+    id: "increase-quantity-button-9"
+- waitForAnimationToEnd
+- assertVisible:
+    text: "2"  # Quantity after increase
+- assertVisible:
+    text: "$128.00"  # Updated price (64 * 2)
+
+# Test increasing again
+- tapOn:
+    id: "increase-quantity-button-9"
+- waitForAnimationToEnd
+- assertVisible:
+    text: "3"  # Quantity after second increase
+- assertVisible:
+    text: "$192.00"  # Updated price (64 * 3)
+
+# Test decreasing quantity
+- tapOn:
+    id: "decrease-quantity-button-9"
+- waitForAnimationToEnd
+- assertVisible:
+    text: "2"  # Quantity after decrease
+- assertVisible:
+    text: "$128.00"  # Updated price (64 * 2)
+
+# Test removing item
+- tapOn:
+    id: "remove-item-button-9"
+- tapOn:
+    text: "Remove"  # Confirm removal in the alert
+- waitForAnimationToEnd
+
+# Verify empty cart state
+- assertVisible:
+    text: "Your cart is empty"
+- assertVisible:
+    text: "Continue Shopping"
+
+# Test going back to shop from empty cart
+- tapOn:
+    text: "Continue Shopping"
+- assertVisible:
+    text: "Electronics"
+
+
+# Navigate back to profile and sign out
+- tapOn:
+    text: "profile"
+- tapOn: 
+    text: "Sign Out"

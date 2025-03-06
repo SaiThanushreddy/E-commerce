@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "ecommerece-app",
+    "slug": "ecommerece-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/shopping.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/shopping.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/shopping.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./google-services.json",
+      "package": "com.thanushreddy.ecommereceapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/shopping.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "@react-native-google-signin/google-signin"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9ee6e18b-06ba-44f2-a1ea-79a2d8090ca5"
+      }
+    }
+  }
+}
