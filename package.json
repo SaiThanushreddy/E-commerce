@@ -13,9 +13,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
-  "jest": {
-    "preset": "jest-expo"
-  },
+ 
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@react-native-firebase/app": "^21.11.0",
